@@ -33,10 +33,13 @@ jobs:
         with:
           node-version: "${{ steps.nvm.outputs.NVMRC }}"
 
-      - name: Run npm build
+      - name: Run npm intsall and build for client
         run: |
           npm ci
-          npm run build
+          npm run buil
+
+      - name: Run npm install for functions
+        run: (cd functions && npm ci)
 
       - name: GitHub Action for Firebase
         uses: w9jds/firebase-action@v2.0.0
