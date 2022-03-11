@@ -36,7 +36,7 @@ jobs:
       - name: Run npm intsall and build for client
         run: |
           npm ci
-          npm run buil
+          npm run build
 
       - name: Run npm install for functions
         run: (cd functions && npm ci)
