@@ -23,3 +23,4 @@ yarn-error.log*
 
 # Firebase specific items
 ui-debug.log
+firebase-debug.log
